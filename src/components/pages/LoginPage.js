@@ -8,7 +8,7 @@ import { login } from '../../actions/auth';
 class LoginPage extends React.Component {
 
   submit = (data) =>
-   this.props.login(data).then(() => this.props.history.push("/")); //history proveded by router
+   this.props.login(data).then(() => this.props.history.push("/dashboard")); //history proveded by router
 
   render(){
     return(
